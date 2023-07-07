@@ -45,13 +45,12 @@ public class Program {
 		for (Pessoa pessoa : list) {
 			System.out.println(pessoa.getNome() + " $ " + String.format("%.2f", pessoa.imposto()));
 		}
-		// pesquisei ajuda apenas paga soma do total :)
-		/* verificar a parte da soma pois não está dando correto
-		 * double soma = 0.0;
+		// pesquisei ajuda apenas paga soma do total :) e uma correção do get-set nas classes
+		  double soma = 0.0;
 		for (Pessoa pessoa : list) {
 			soma += pessoa.imposto();
 			}
-		System.out.println("Total de impostos pagos: $ " + String.format("%.2f", soma));*/
+		System.out.println("Total de impostos pagos: $ " + String.format("%.2f", soma));
 
 		sc.close();
 	}
